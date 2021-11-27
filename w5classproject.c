@@ -1,25 +1,16 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include <stdio.h>  
+int main()  
+{  
+   int n;// variable declaration  
+   // Displaying the n tables.  
+   for(int i=1;i<=10;i++)  // outer loop  
+   {  
+       for(int j=1;j<=10;j++)  // inner loop  
+       {  
+           printf("%d  %d\n",i,j); //  printing the value.  
+       }  
+       printf("\n");  
+   }
+   return 0;
 
-
-void *stdthread(void *var);
-int count;
-
-int main(){
-
-    static char stdname[20];
-    static int matricno;
-    int i;
-    printf("how many students do you want to register: ");
-    scanf("%d",&count);
-    for(i=0;i<count;i++){
-            printf("\nstudents name:\n");
-            scanf("%s",&stdname);
-            printf("studnets matric No:\n");
-            scanf("%d",&matricno);
-    }
-    printf("Student name: %s, matric No: %d",stdname,matricno);
-
-return 0;
-} 
+}
