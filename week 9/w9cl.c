@@ -27,7 +27,7 @@ int main(){
         printf("The elements of the array are: \n");
         for(int i=0; i<3; i++){
             for(int j=0;j<2; j++){
-                printf("%f\n",ptr[i][j]);
+                printf("%.2f\n",ptr[i][j]);
             }
         }
     }
